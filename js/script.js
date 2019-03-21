@@ -36,4 +36,13 @@ $("#search-button").click(function(){
 
 $("#mailto").click(function(){
     window.location.href = "mailto:'"+$("#email").val()+"'?subject=Get Memed&body="+global_gif+"";
-})
+});
+
+$(".text-center").click(function(){
+    $(".modal").css("display", "block");
+    $("#modal-image").html("<img src='"+ global_gif +"'>");
+});
+
+$(".close").click(function(){
+    $(".modal").css("display", "none"); 
+});
